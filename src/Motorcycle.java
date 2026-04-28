@@ -4,17 +4,24 @@ public class Motorcycle extends Vehicle {
         super(brand, color, yom, model, fuelLevel);
 
     }
+
     @Override
-    public void accelerate(){
+    public void accelerate() {
+
         System.out.println("Motorcycle accelerate");
-    }@Override
-    public void stop(){
+    }
+
+    @Override
+    public void stop() {
+
         System.out.println("Motorcycle Brakes Applied");
-    }@Override
-    public void gas(double litres){
+    }
+
+    @Override
+    public void gas(double litres) {
         this.fuelLevel += litres;
         System.out.println("Motorcycle filled by " + litres + "L.");
         System.out.println("Total:" + fuelLevel);
 
-    }
-
+    };
+}

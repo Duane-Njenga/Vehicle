@@ -1,14 +1,16 @@
 public abstract class Vehicle {
-    private String brand;
-    private String color;
-    private int yom;
-    private String model;
-    double fuelLevel;
+    protected String brand;
+    protected String color;
+    protected int yom;
+    protected String model;
+    protected double fuelLevel;
 
-    public Vehicle(String brand, String color, int yom) {
+    public Vehicle(String brand, String color, int yom, String model, double fuelLevel) {
         this.brand =brand;
         this.color =color;
         this.yom =yom;
+        this.model =model;
+        this.fuelLevel = fuelLevel;
     }
     public abstract void accelerate();
     public abstract void stop();

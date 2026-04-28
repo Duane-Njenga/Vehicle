@@ -1,9 +1,9 @@
-public class Sedan implements Automobile extends Vehicle{
+public class Sedan extends Vehicle implements Automobile{
     int numDoors;
     private String engineType;
 
     public Sedan(int numDoors, String engineType, String brand, String color, String model, int yom, double fuelLevel) {
-        super(brand, model, yom, fuelLevel);
+        super(brand, color, yom, model, fuelLevel);
         this.numDoors = numDoors;
         this.engineType = engineType;
 
@@ -11,6 +11,9 @@ public class Sedan implements Automobile extends Vehicle{
     }
     public void accelerate() {
         System.out.println("Sedan accelerates.");
+    }
+    public void accelerate(int targetSpeed) {
+        System.out.println(model + " accelerates to " + targetSpeed + " km/h.");
     }
     public void stop() {
         System.out.println("Sedan brakes gently and stops.");
@@ -43,4 +46,14 @@ public class Sedan implements Automobile extends Vehicle{
     public void hoot(){
         System.out.println("Beep! Beep!");
     };
+
+//    public void getInfo() {
+//        System.out.println(
+//         yom + " " + brand + " " + model +
+//                " | Color: " + color +
+//                " | Doors: " + numDoors +
+//                " | Engine: " + engineType +
+//                " | Fuel: " + fuelLevel + "L"
+//         );
+    }
 }

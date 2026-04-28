@@ -1,9 +1,9 @@
-public class SportsCar implements Automobile extends Vehicle{
+public class SportsCar extends Vehicle implements Automobile {
     int numDoors;
     private String engineType;
 
     public SportsCar(int numDoors, String engineType, String brand, String color, String model, int yom, double fuelLevel) {
-        super(brand, model, yom, fuelLevel);
+        super(brand, color, yom, model, fuelLevel);
         this.numDoors = numDoors;
         this.engineType = engineType;
 

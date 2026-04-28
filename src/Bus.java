@@ -1,8 +1,8 @@
 public class Bus extends Vehicle {
     protected int passengerCapacity;
 
-    public Bus(String brand, String model, int yom,double fuelLevel, int passengerCapacity) {
-        super(brand, model, yom, fuelLevel);
+    public Bus(String brand,String color, int yom,String model,double fuelLevel, int passengerCapacity) {
+        super(brand, color, yom, model, fuelLevel);
         this.passengerCapacity = passengerCapacity;
     }
 
