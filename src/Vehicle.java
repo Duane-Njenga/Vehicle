@@ -2,6 +2,8 @@ public abstract class Vehicle {
     private String brand;
     private String color;
     private int yom;
+    private String model;
+    double fuelLevel;
 
     public Vehicle(String brand, String color, int yom) {
         this.brand =brand;
@@ -10,7 +12,7 @@ public abstract class Vehicle {
     }
     public abstract void accelerate();
     public abstract void stop();
-    public abstract void gas();
+    public abstract void gas(double litres);
 
     public void displayInfo() {
         System.out.println(yom + " " + brand + " (" + color + ")");
